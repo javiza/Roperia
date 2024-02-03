@@ -10,7 +10,7 @@
 
     <h2>Calculo de compras</h2>
     <!-- ejericio1.html -->
-    <form action="/ejercicio1" method="POST">
+    <form action="/usuario" method="POST">
         <div>
             <label for="nombre">Ingresa tu nombre</label>
         </div>
@@ -19,28 +19,21 @@
         </div>
 
         <div>
-            <label for="edad">Ingresa tu edad</label>
+            <label for="tipo">Ingresa tipo Ropa</label>
         </div>
         <div>
-            <input class="form-group" type="number" id="edad" name="edad">
+          <select id="tipo" name="tipo">
+                 <option value="tipo">Selecciona un tipo</option>
+                 <option value="verde">verde</option>
+                 <option value="blanco">blanco</option>
+           </select>
         </div>
          <div >
-            <label for="tarros">Ingresa la cantidad de tarros de pintura a comprar</label>
+            <label for="descripcion">Ingresa una descripción</label>
         </div>
         <div>
-            <input class="form-group" type="number" id="tarros" name="tarros">
+            <input class="form-group" type="text" id="descripcion" name="descripcion">
         </div>
-
-        <div>
-            <input   class="boton2 form-group" type="submit" value="Enviar">
-        </div>
-        <div class="centrado">
-            <p> {{ nombre }}</p>
-             <p> {{ totalSinDescuento }} </p>
-             <p> {{ descuento }} </p>
-             <p> {{ totalPagar }} </p>
-        </div>
-
 
     </form>
 </div>

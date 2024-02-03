@@ -1,10 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Usuario</title>
+    <link rel="stylesheet" href="/static/css/estilos.css">
 </head>
 <body>
-$END$
+    <div class="caja">
+        <img src="/static/image/logo.png" alt="Logo" class="logo">
+        <h1>Roperia</h1>
+        <p>Usuario: </p>
+    </div>
+    <div class="container centrado">
+         <form action="/ingresar" method="POST">
+        <div>
+            <label for="nombre">nombre prenda</label>
+        </div>
+        <div>
+            <input class="form-group" type="text" id="nombre" name="nombre">
+        </div>
+
+        <div>
+            <label for="tipo">Ingresa tipo Ropa</label>
+        </div>
+        <div>
+          <select id="tipo" name="tipo">
+                 <option value="tipo">Selecciona un tipo</option>
+                 <option value="verde">verde</option>
+                 <option value="blanco">blanco</option>
+           </select>
+        </div>
+         <div >
+            <label for="descripcion">Ingresa una descripción</label>
+        </div>
+        <div>
+            <input class="form-group" type="text" id="descripcion" name="descripcion">
+        </div>
+
+    </form>
+    </div>
+
+     <div class="container centrado">
+         <form action="/actualizar" method="POST">
+
+
+             
+        <div>
+            <label for="nombre">nombre prenda</label>
+        </div>
+        <div>
+            <input class="form-group" type="text" id="nombre" name="nombre">
+        </div>
+
+        <div>
+            <label for="tipo">Ingresa tipo Ropa</label>
+        </div>
+        <div>
+          <select id="tipoR" name="tipo">
+                 <option value="tipo">Selecciona un tipo</option>
+                 <option value="verde">verde</option>
+                 <option value="blanco">blanco</option>
+           </select>
+        </div>
+         <div >
+            <label for="descripcion">Ingresa una descripción</label>
+        </div>
+        <div>
+            <input class="form-group" type="text" id="descripcion" name="descripcion">
+        </div>
+
+    </form>
+    </div>
+ <div class="container centrado">
+         <form action="/eliminar" method="POST">
+        <div>
+            <label for="nombre">nombre prenda</label>
+        </div>
+        <div>
+            <input class="form-group" type="text" id="nombre" name="nombre">
+        </div>
+
+
+    </form>
+    </div>
 </body>
 </html>
